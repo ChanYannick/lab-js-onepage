@@ -2,7 +2,7 @@
 
 ## Pitch 
 
-Vous partez d'une page HTML déjà construite qui est inspirée de la page de présentation du plug-in Smint: http://www.outyear.co.uk/smint/
+Vous partez d'une page HTML déjà construite (http://bruxellesformationcepegra.github.io/lab-js-onepage) qui est inspirée de la page de présentation du plug-in Smint: http://www.outyear.co.uk/smint/
 
 Le but est de réimplementer vous-même ce que ce plugin propose à savoir: sticky menu, scroll spy et smooth scroll.
 
@@ -45,6 +45,7 @@ A utiliser: `$(window).scroll()`, `$(window).scrollTop()`, `.offset().top` et un
 Renseigner vous sur le *throttling* et le *debounce* qui permettent d'améliorer la performance d'actions menées au scroll ou au resize de fenêtre
 
 [Debounce and Throttle: a visual explanation](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)
+
 [Fonctions throttle et debounce de Underscore.js](http://underscorejs.org/#throttle)
 
 **Happy scrolling !**
