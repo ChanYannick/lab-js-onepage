@@ -1,23 +1,29 @@
 //sticky  menu
 
 var posMenu = $(".menu").offset().top;
-//var topHeight = $("#home").height();
 var $menu = $('.menu');
+//var $nav= $('nav').height();
+
+//console.log($nav)
 $(window).scroll(function(){
     
-	if ($(this).scrollTop() >= posMenu) {
+	if ($(this).scrollTop()>= posMenu ) {
         $menu.addClass('fixed');
+        $("#home").css({paddingTop : 80});
     }
     else {
         $menu.removeClass('fixed');
+        $("#home").css({paddingTop : 30});
     }
     //scroll spy
-    var scrollTop = $(window).scrollTop();
+    var scrollIn = $(window).scrollTop();
     var wHeight = $(document).height();
-    var scrollEnd = scrollTop + $(window).height();
+    var scrollEnd = scrollIn + $(window).height();
     var $about = $('a[href="#aboutMe"]');
+  
+     
      $('div[id]').each(function(){
-      if(scrollTop > $(this).offset().top){
+      if(scrollIn > $(this).offset().top-50){
         $("a.selected").removeClass("selected");      				
         //console.log("a[href='#"+$(this).attr("id")+"']");
        $("a[href='#"+$(this).attr("id")+"']").addClass("selected");	
